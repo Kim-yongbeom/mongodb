@@ -33,7 +33,7 @@ function SignInContainer({ setIsLoggined }) {
         history.push("/");
 
         console.log("로그인 성공");
-        alert("로그인 성공");
+        alert("로그인 성공.");
         setUserInfo({
           userId: "",
           password: "",

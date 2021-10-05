@@ -30,7 +30,7 @@ const searchController = {
       });
 
       res.status(200).json({
-        message: "검색 성공.",
+        message: "검색 성공",
         data: finResult,
       });
     } catch (error) {
