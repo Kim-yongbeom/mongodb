@@ -32,11 +32,13 @@ const NavFrontWrap = styled.div`
   height: 100%;
 `;
 
-const NavLogo = styled(Link)`
+const NavLogo = styled.div`
   font-size: 2rem;
   font-weight: bolder;
   text-decoration: none;
   color: #000000;
+  cursor: pointer;
+  user-select: none;
 `;
 
 const NavLogoImg = styled.img`
@@ -156,13 +158,14 @@ function NavbarComponent({
   searchState,
   searchData,
   onClickAutoComplete,
+  onClickHome,
 }) {
   return (
     <>
       <NavbarWrap>
         <NavContainer>
           <NavFrontWrap>
-            <NavLogo to="/">
+            <NavLogo onClick={onClickHome}>
               <NavLogoImg src="career.png" />
             </NavLogo>
             <NavLinkWrap>

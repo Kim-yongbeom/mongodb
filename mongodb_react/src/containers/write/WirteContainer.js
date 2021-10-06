@@ -28,10 +28,6 @@ function WriteContainer() {
       boardPw: boardPw,
     };
     const token = localStorage.getItem("accessToken");
-    // POST
-    // url : /ssac/board
-    // headers : {Authorization : token}
-    // body { title, content, boardPw }
 
     try {
       const response = await axios({

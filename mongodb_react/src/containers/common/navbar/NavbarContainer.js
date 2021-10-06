@@ -58,6 +58,9 @@ function NavbarContainer({ isLoggined, setIsLoggined }) {
   const onClickSignout = () => {
     localStorage.removeItem("accessToken");
     setIsLoggined(false);
+  };
+
+  const onClickHome = () => {
     history.push("/");
   };
 
@@ -71,6 +74,7 @@ function NavbarContainer({ isLoggined, setIsLoggined }) {
       onChangeInput={onChangeInput}
       searchInfo={searchInfo}
       onClickSearch={onClickSearch}
+      onClickHome={onClickHome}
     />
   );
 }

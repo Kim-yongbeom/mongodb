@@ -91,8 +91,8 @@ function WriteComponent({
       <QuillWrap>
         <div ref={quillElement} />
       </QuillWrap>
-      <ButtonWrap onClick={onClickSubmit}>
-        <StyledSubmitButton>제출</StyledSubmitButton>
+      <ButtonWrap>
+        <StyledSubmitButton onClick={onClickSubmit}>제출</StyledSubmitButton>
         <StyledCancelButton>취소</StyledCancelButton>
       </ButtonWrap>
     </WriteWrap>
