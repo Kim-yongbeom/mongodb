@@ -8,3 +8,6 @@
 
 ### 클릭하면 자세히 보기 (동일한 아이디로 접근하면 삭제 버튼 보임, 다른 아이디로 접근하면 보이지 않는다), 삭제, 뒤로가기 가능
 <img width="1440" alt="스크린샷 2021-10-07 오후 8 36 11" src="https://user-images.githubusercontent.com/89058117/136376621-2fb05a82-01cb-4c05-85f7-104be78b6b8e.png">
+
+### 다른 아이디로 접근했을때
+<img width="1440" alt="스크린샷 2021-10-07 오후 8 40 27" src="https://user-images.githubusercontent.com/89058117/136377173-225240be-3b93-491b-a414-2753c788a999.png">
