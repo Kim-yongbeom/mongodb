@@ -6,8 +6,8 @@ import MainContainer from "../containers/common/main/MainContainer";
 function Home() {
   return (
     <>
-      <MainContainer />
       <PostsListContainer />
+      {/* <MainContainer /> */}
     </>
   );
 }

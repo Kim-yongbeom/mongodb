@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import LoadingComponent from "../common/loading/LoadingComponent";
 import PostItemComponent from "../post/PostItemComponent";
 
 const PostListWrap = styled.div`
@@ -9,14 +10,21 @@ const PostListWrap = styled.div`
   align-items: center;
 `;
 
-function PostsListComponent({ postList, onClickPost }) {
+function PostsListComponent({ postList, onClickPost, loading }) {
   console.log(postList);
   return (
-    <PostListWrap>
-      {postList.map((item, index) => (
-        <PostItemComponent key={index} post={item} onClickPost={onClickPost} />
-      ))}
-    </PostListWrap>
+    <>
+      {loading && <LoadingComponent />}
+      <PostListWrap>
+        {postList.map((item, index) => (
+          <PostItemComponent
+            key={index}
+            post={item}
+            onClickPost={onClickPost}
+          />
+        ))}
+      </PostListWrap>
+    </>
   );
 }
 

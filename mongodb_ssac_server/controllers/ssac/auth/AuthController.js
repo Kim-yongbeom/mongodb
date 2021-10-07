@@ -2,6 +2,21 @@ const users = require("../../../models/user");
 const jwtModule = require("../../../modules/jwtModule");
 
 const AuthController = {
+  getProfile: (req, res) => {
+    const userInfo = req.userInfo;
+
+    if (userInfo) {
+      res.status(200).json({
+        message: "프로필 조회 성공",
+        data: userInfo,
+      });
+    } else {
+      res.status(400).json({
+        message: "프로필 조회 실패",
+      });
+    }
+  },
+
   uploadSignup: async (req, res) => {
     const { userId, name, password } = req.body;
     try {

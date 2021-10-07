@@ -7,6 +7,7 @@ const searchRouter = require("../routes/search/index");
 
 router.post("/ssac/signup", AuthController.uploadSignup);
 router.post("/ssac/signin", AuthController.uploadSignin);
+router.get("/ssac/profile", authModule.loggedIn, AuthController.getProfile);
 
 router.get("/ssac/board", BoardController.readAllBoard);
 router.get("/ssac/board/:id", BoardController.detailBoard);

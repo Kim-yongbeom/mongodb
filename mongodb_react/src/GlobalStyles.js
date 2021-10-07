@@ -7,8 +7,13 @@ const GlobalStyles = createGlobalStyle`   // 전역 css 관리
     font-size: 10px; //10px = 1rem
   }
   em {
+    /* font-weight: bolder;
+    color : skyblue; */
+    font-style: italic;
+  }
+
+  strong{
     font-weight: bolder;
-    color : skyblue;
   }
 `;
 

@@ -87,10 +87,9 @@ const NavStyledIcon = styled.div`
 `;
 
 const NavProfileImg = styled.img`
-  width: 4rem;
-  height: 4rem;
+  width: 3.4rem;
+  height: 3.4rem;
   cursor: pointer;
-  margin-left: 2rem;
 `;
 
 const NavSignout = styled.div`
@@ -150,6 +149,12 @@ const SearchItemTitle = styled.div`
   font-weight: normal;
 `;
 
+const ProfileName = styled.div`
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-left: 3rem;
+`;
+
 function NavbarComponent({
   isLoggined,
   onClickSignout,
@@ -159,6 +164,7 @@ function NavbarComponent({
   searchData,
   onClickAutoComplete,
   onClickHome,
+  profile,
 }) {
   return (
     <>
@@ -222,6 +228,9 @@ function NavbarComponent({
                 <AiOutlineBell />
               </NavStyledIcon>
             </NavIconsWrap>
+            <ProfileName>
+              {profile && `${profile.name}님 반갑습니다`}
+            </ProfileName>
             <NavProfileImg src={"profile.png"} />
           </NavProfileWrap>
         </NavContainer>

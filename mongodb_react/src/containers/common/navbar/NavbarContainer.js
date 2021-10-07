@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import NavbarComponent from "../../../components/common/navbar/NavbarComponent";
 
-function NavbarContainer({ isLoggined, setIsLoggined }) {
+function NavbarContainer({ isLoggined, setIsLoggined, profile }) {
   const history = useHistory();
 
   const [searchState, setSearchState] = useState(false);
@@ -66,6 +66,7 @@ function NavbarContainer({ isLoggined, setIsLoggined }) {
 
   return (
     <NavbarComponent
+      profile={profile}
       onClickAutoComplete={onClickAutoComplete}
       searchState={searchState}
       searchData={searchData}
